@@ -1,3 +1,6 @@
+"use client"
+
+
 export default function ProfilePage() {
     return (
       <main className="flex justify-center mt-24 px-4">
@@ -23,7 +26,7 @@ export default function ProfilePage() {
             </div>
   
             {/* Tombol Edit */}
-            <div className="self-end md:self-center">
+            <div className="self-end md:self-baseline-last">
               <button className="bg-blue-900 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition">
                 Edit Profile
               </button>
