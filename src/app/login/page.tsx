@@ -1,8 +1,21 @@
 export default function LoginPage() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-white">
-        <h1>Login Page</h1>
+        <div className="bg-gray-200 p-8 rounded-lg shadow-md w-96">
+        <h1 className="text-2xl font-bold text-center mb-6">LOGIN</h1>
+        <form className="space-y-4">
+          <input
+            type="text"
+            placeholder="Username"
+            className="w-full p-2 border rounded"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            className="w-full p-2 border rounded"
+          />
+        </form>
       </div>
-    )
-  }
-  
+    </div>
+  )
+}
