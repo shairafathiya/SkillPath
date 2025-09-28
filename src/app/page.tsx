@@ -5,15 +5,6 @@ import React from "react";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navbar */}
-      
-      <nav className="flex justify-center gap-10 py-6 text-lg font-medium">
-        <a href="#" className="hover:text-blue-700">Home</a>
-        <a href="../quiz" className="hover:text-blue-700">Quiz</a>
-        <a href="#" className="hover:text-blue-700">Result</a>
-        <a href="#" className=" justify-items-end-safe hover:text-blue-700">Sign-up</a>
-      </nav>
-      
 
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-6 py-12">
