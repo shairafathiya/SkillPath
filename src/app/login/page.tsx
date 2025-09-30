@@ -25,6 +25,13 @@ export default function LoginPage() {
     MASUK
   </button>
 </form>
+  <p className="text-center text-sm mt-4">
+  Belum Memiliki Akun ?{" "}
+  <a href="/daftar" className="text-blue-600 hover:underline">
+    Daftar disini
+  </a>
+</p>
+
 
       </div>
     </div>
