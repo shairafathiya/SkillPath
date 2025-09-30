@@ -1,21 +1,25 @@
-# Use an official Node.js runtime as a parent image
-FROM node:latest
+# Dockerfile untuk Next.js Application
 
-# Set the working directory in the container
-WORKDIR /usr/src/app
+# Menggunakan Node.js 20 Alpine sebagai base image
+FROM node:20-alpine
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
+# Set working directory di dalam container
+WORKDIR /app
+
+# Copy package.json dan package-lock.json (jika ada)
 COPY package*.json ./
 
-RUN npm install
+# Install dependencies
+RUN npm ci
 
-# Bundle app source
+# Copy semua source code ke container
 COPY . .
 
-# Build your Next.js app for production
+# Build aplikasi untuk production
 RUN npm run build
 
-# Start the application
+# Expose port 3000 (default Next.js port)
+EXPOSE 3000
+
+# Jalankan aplikasi Next.js
 CMD ["npm", "start"]
