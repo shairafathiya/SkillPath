@@ -17,7 +17,7 @@ export default function Navbar() {
             <Link href="/quiz" className="hover:text-blue-600">Quiz</Link>
           </li>
           <li>
-            <Link href="/stats" className="hover:text-blue-600">Stats</Link>
+            <Link href="/result" className="hover:text-blue-600">Result</Link>
           </li>
           <li>
             <Link href="/profile" className="hover:text-blue-600">Profile</Link>
