@@ -46,7 +46,7 @@ export default function QuizPage() {
         {/* Tombol Navigasi */}
         <div className="flex justify-between mt-8">
           <button className="bg-blue-900 text-white w-12 h-12 rounded flex items-center justify-center text-xl hover:bg-blue-800">
-            <Link href ="/quiz2"> {">"}</Link>
+            <Link href ="/quiz1"> {"<"}</Link>
           </button>
           <button className="bg-blue-900 text-white w-12 h-12 rounded flex items-center justify-center text-xl hover:bg-blue-800">
             <Link href ="/quiz2"> {">"}</Link>
