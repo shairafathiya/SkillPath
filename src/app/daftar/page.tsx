@@ -48,7 +48,7 @@ export default function Register() {
               type="submit"
               className="w-full bg-blue-900 text-white py-2 rounded hover:bg-blue-800"
             >
-              DAFTAR
+             <Link href= "/login"></Link> DAFTAR
             </button>
           </form>
           <p className="mt-4 text-sm text-gray-700">
