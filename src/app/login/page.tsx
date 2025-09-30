@@ -23,7 +23,7 @@ export default function LoginPage() {
 
   <button
     type="submit"
-    className="w-full bg-blue-900 text-white p-2 rounded hover:bg-blue-800 mt-4"
+    className="w-full bg-blue-900 text-white p-2 rounded hover:bg-blue-800 mt-"
   >
    <Link href="/quiz">MASUK</Link> 
   </button>
