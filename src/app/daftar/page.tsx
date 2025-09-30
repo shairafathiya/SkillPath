@@ -15,7 +15,7 @@ export default function Register() {
       <main className="flex flex-1 items-center justify-center relative">
         {/* Left Illustration */}
         <img
-          src="/illustration-left.png"
+          src="../img/Learning1.png"
           alt="Orang berjalan"
           className="absolute bottom-0 left-10 w-40 h-auto"
         />
