@@ -1,57 +1,40 @@
 "use client";
-import { useState } from "react";
+import React from "react";
+
+import Image from "next/image";
+import Link from "next/link";
 
 export default function QuizPage() {
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-
-  const handleSelect = (answer: string) => {
-    setSelectedAnswer(answer);
-  };
-
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center">
-      {/* Card */}
-      <div className="bg-gray-200 p-8 rounded-lg shadow-md w-full max-w-3xl border-2 border-blue-400">
-        {/* Judul */}
-        <h1 className="text-3xl font-bold text-center mb-6">QUIZ BLABLA</h1>
-
-        {/* Pertanyaan */}
-        <p className="text-center mb-6 text-lg">
-          Apa jenis aktivitas yang paling kamu sukai?
-        </p>
-
-        {/* Opsi Jawaban */}
-        <div className="space-y-4">
-          {[
-            { key: "A", text: "Memecahkan soal logika/matematika" },
-            { key: "B", text: "Mendesain atau membuat karya kreatif" },
-            { key: "C", text: "Membantu orang lain dan bekerja dalam tim" },
-            { key: "D", text: "Melakukan eksperimen atau penelitian" },
-          ].map((option) => (
-            <div
-              key={option.key}
-              onClick={() => handleSelect(option.key)}
-              className={`cursor-pointer border rounded px-4 py-2 ${
-                selectedAnswer === option.key
-                  ? "bg-blue-900 text-white border-blue-900"
-                  : "bg-white hover:bg-gray-100"
-              }`}
-            >
-              {option.key}. {option.text}
-            </div>
-          ))}
+    <main className="flex justify-center mt-24 px-4">
+      <div className="bg-gray-200 rounded-xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row items-center gap-8 max-w-5xl w-full">
+        {/* Gambar Kiri */}
+        <div className="w-full md:w-1/2">
+          <Image
+            src="/img/Belajar.jpg" 
+            alt="Quiz Illustration"
+            width={500}
+            height={300}
+            className="rounded-md border-4 border-blue-900 object-cover"
+          />
         </div>
 
-        {/* Tombol Navigasi */}
-        <div className="flex justify-between mt-8">
-          <button className="bg-blue-900 text-white w-12 h-12 rounded flex items-center justify-center text-xl hover:bg-blue-800">
-            {"<"}
-          </button>
-          <button className="bg-blue-900 text-white w-12 h-12 rounded flex items-center justify-center text-xl hover:bg-blue-800">
-            {">"}
+        {/* Konten Kanan */}
+        <div className="w-full md:w-1/2 text-center md:text-left">
+          <h2 className="text-3xl font-extrabold mb-4 text-black">
+            QUIZ BLABLA
+          </h2>
+          <p className="text-gray-800 mb-6 leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+          </p>
+          <button className="bg-blue-900 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition">
+           <Link href="/quiz1">Mulai Test</Link> 
           </button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
