@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function LoginPage() {
     return (
@@ -22,18 +23,20 @@ export default function LoginPage() {
 
   <button
     type="submit"
-    className="w-full space-y-4 bg-blue-900 text-white p-2 rounded hover:bg-blue-800 mt-4 ">
-    MASUK
+    className="w-full bg-blue-900 text-white p-2 rounded hover:bg-blue-800 mt-4"
+  >
+   <Link href="/quiz">MASUK</Link> 
   </button>
-   {/* Link ke halaman daftar */}
+</form>
+ {/* Link ke halaman daftar */}
   <p className="text-center text-sm mt-4">
   Belum Memiliki Akun ?{" "}
   <a href="/daftar" className="text-blue-600 hover:underline">
     Daftar disini
   </a>
 </p>
-</form>
 </div>
 </div>
-)
+    
+  )
 }
