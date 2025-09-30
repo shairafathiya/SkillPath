@@ -71,7 +71,7 @@ export default function InformatikaDetail() {
         {/* Tombol Navigasi */}
         <div className="flex justify-center gap-4 mt-8">
           <button className="bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition">
-           <Link href= "/quiz"></Link> Kembali ke Home
+           <Link href= "/quiz">Kembali ke Home</Link> 
           </button>
           <button className="bg-gray-300 text-blue-900 px-6 py-2 rounded-lg hover:bg-gray-400 transition">
             <Link href="/quiz1">Coba Quiz Lagi</Link>
