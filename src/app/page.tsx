@@ -1,5 +1,6 @@
 
 
+import Link from "next/link";
 import React from "react";
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
             dan memilih jalur pendidikan yang tepat untuk masa depan.
           </p>
           <button className="mt-6 bg-blue-900 text-white px-6 py-3 rounded shadow hover:bg-blue-800">
-            Mulai Test
+           <Link href ="/login" >Mulai Test</Link>
           </button>
         </div>
 
