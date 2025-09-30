@@ -2,6 +2,7 @@
 import React from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function QuizPage() {
   return (
@@ -30,7 +31,7 @@ export default function QuizPage() {
             commodo consequat.
           </p>
           <button className="bg-blue-900 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition">
-            Mulai Test
+           <Link href="/quiz1">Mulai Test</Link> 
           </button>
         </div>
       </div>
