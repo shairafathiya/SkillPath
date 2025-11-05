@@ -18,16 +18,16 @@ export default function QuizPage() {
 
         {/* Pertanyaan */}
         <p className="text-center mb-6 text-lg">
-          Ketika menghadapi masalah sulit, kamu akan:
+          Hal yang paling membuatmu tertarik dari teknologi adalah:
         </p>
 
         {/* Opsi Jawaban */}
         <div className="space-y-4">
           {[
-            { key: "A", text: "Menganalisis penyebab dan mencari solusi logis" },
-            { key: "B", text: "Mencari inspirasi dari hal-hal kreatif" },
-            { key: "C", text: "Menanyakan pendapat teman atau keluarga" },
-            { key: "D", text: "Mencoba langkah-langkah baru secara langsung" },
+            { key: "A", text: "Bagaimana komputer dan sistem bekerja" },
+            { key: "B", text: "Desain dan tampilan aplikasi" },
+            { key: "C", text: "Dampaknya terhadap kehidupan sosial" },
+            { key: "D", text: "Penerapannya dalam bidang sains" },
           ].map((option) => (
             <div
               key={option.key}
@@ -49,7 +49,7 @@ export default function QuizPage() {
             <Link href ="/quiz1"> {"<"}</Link>
           </button>
           <button className="bg-blue-900 text-white w-12 h-12 rounded flex items-center justify-center text-xl hover:bg-blue-800">
-            <Link href ="/quiz4"> {">"}</Link>
+            <Link href ="/quiz-end"> {">"}</Link>
           </button>
         </div>
       </div>
