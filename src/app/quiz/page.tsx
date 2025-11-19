@@ -25,10 +25,9 @@ export default function QuizPage() {
             QUIZ PENENTUAN JURUSAN
           </h2>
           <p className="text-gray-800 mb-6 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
+            Quiz ini membantu kamu mengetahui jurusan yang cocok berdasarkan minat,
+            cara belajar, dan preferensi aktivitas. Hasil akhir memberikan rekomendasi
+            jurusan yang paling sesuai untuk perjalanan akademikmu.
           </p>
           <button className="bg-blue-900 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition">
            <Link href="/quiz1">Mulai Test</Link> 
