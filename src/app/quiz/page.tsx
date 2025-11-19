@@ -22,7 +22,7 @@ export default function QuizPage() {
         {/* Konten Kanan */}
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h2 className="text-3xl font-extrabold mb-4 text-black">
-            QUIZ BLABLA
+            QUIZ PENENTUAN JURUSAN
           </h2>
           <p className="text-gray-800 mb-6 leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
