@@ -68,7 +68,7 @@ export default function Home() {
             </p>
           </div>
           <img
-            src="/img/about1.jpg"
+            src="/img/about1.png"
             className="rounded-xl w-full md:w-1/2 h-64 object-cover"
             alt="Students studying"
           />
@@ -83,7 +83,7 @@ export default function Home() {
             </p>
           </div>
           <img
-            src="/img/about2.jpg"
+            src="/img/rajin.jpg"
             className="rounded-xl w-full md:w-1/2 h-64 object-cover"
             alt="Students discussing"
           />
