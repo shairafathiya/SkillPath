@@ -48,6 +48,7 @@ export default function HomeAfterLogin() {
       {/* === NEWS TITLE === */}
       <div className="max-w-5xl mx-auto px-6 mt-20">
         <div className="bg-indigo-400 rounded-xl py-4">
+           
           <h3 className="text-center text-3xl font-bold text-white italic">
             News!
           </h3>
@@ -64,9 +65,13 @@ export default function HomeAfterLogin() {
               src="/img/uni2.jpg"
               className="rounded-xl w-full h-40 object-cover"
             />
-            <p className="text-center text-white mt-4 font-medium">
+             <Link
+            href={"/news1"}>
+                 <p className="text-center text-white mt-4 font-medium">
               100 Universitas Terbaik di Indonesia 2025 versi Webometrics
             </p>
+            </Link>
+           
           </div>
 
           {/* Card 2 */}
