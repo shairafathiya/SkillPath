@@ -64,9 +64,12 @@ export default function HomeAfterLogin() {
               src="/img/uni2.jpg"
               className="rounded-xl w-full h-40 object-cover"
             />
+            <Link href={"/news1"}>
             <p className="text-center text-white mt-4 font-medium">
               100 Universitas Terbaik di Indonesia 2025 versi Webometrics
             </p>
+            </Link>
+            
           </div>
 
           {/* Card 2 */}
@@ -75,9 +78,12 @@ export default function HomeAfterLogin() {
               src="/img/uni.webp"
               className="rounded-xl w-full h-40 object-cover"
             />
-            <p className="text-center text-white mt-4 font-medium">
+            <Link href={"/news2"}>
+             <p className="text-center text-white mt-4 font-medium">
               Kampus Terbaik di Indonesia Versi Unirank 2025
             </p>
+            </Link>
+           
           </div>
 
           {/* Card 3 */}
@@ -86,9 +92,12 @@ export default function HomeAfterLogin() {
               src="/img/rajin.jpg"
               className="rounded-xl w-full h-40 object-cover"
             />
+            <Link href={"/news3"}>
             <p className="text-center text-white mt-4 font-medium">
               10 Strategi Belajar Efektif untuk Meningkatkan Prestasi Akademik
             </p>
+            </Link>
+            
           </div>
 
         </div>
