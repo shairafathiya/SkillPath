@@ -61,7 +61,7 @@ export default function HomeAfterLogin() {
           {/* Card 1 */}
           <div className="bg-indigo-500 rounded-2xl p-4 shadow">
             <img
-              src="/img/news1.jpg"
+              src="/img/uni2.jpg"
               className="rounded-xl w-full h-40 object-cover"
             />
             <p className="text-center text-white mt-4 font-medium">
@@ -72,7 +72,7 @@ export default function HomeAfterLogin() {
           {/* Card 2 */}
           <div className="bg-indigo-500 rounded-2xl p-4 shadow">
             <img
-              src="/img/news2.jpg"
+              src="/img/uni.webp"
               className="rounded-xl w-full h-40 object-cover"
             />
             <p className="text-center text-white mt-4 font-medium">
@@ -83,7 +83,7 @@ export default function HomeAfterLogin() {
           {/* Card 3 */}
           <div className="bg-indigo-500 rounded-2xl p-4 shadow">
             <img
-              src="/img/news3.jpg"
+              src="/img/rajin.jpg"
               className="rounded-xl w-full h-40 object-cover"
             />
             <p className="text-center text-white mt-4 font-medium">
