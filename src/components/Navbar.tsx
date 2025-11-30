@@ -11,7 +11,7 @@ export default function Navbar() {
         {/* Menu */}
         <ul className="flex space-x-8 text-lg">
           <li>
-            <Link href="/" className="hover:text-blue-600">Home</Link>
+            <Link href="/home" className="hover:text-blue-600">Home</Link>
           </li>
           <li>
             <Link href="/quiz" className="hover:text-blue-600">Quiz</Link>
