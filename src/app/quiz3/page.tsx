@@ -1,56 +1,162 @@
 "use client";
+import React, { useState } from "react";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function QuizPage() {
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [current, setCurrent] = useState(1);
+  const [answers, setAnswers] = useState<Record<number, number>>({});
+  const totalSoal = 5;
 
-  const handleSelect = (answer: string) => {
-    setSelectedAnswer(answer);
+  const questions = [
+    {
+      id: 1,
+      text: "Saat mempelajari hal baru, saya lebih mudah memahami jika...",
+      options: [
+        "A. Ada gambar/diagramnya",
+        "B. Ada penjelasan suara atau saya mendengarkan orang lain",
+        "C. Saya langsung mencoba atau mempraktikkannya",
+      ],
+    },
+    {
+      id: 2,
+      text: "Saya lebih cepat memahami informasi ketika...",
+      options: [
+        "A. Melihat tampilan visualnya",
+        "B. Mendengar penjelasan orang lain",
+        "C. Mempraktikkan secara langsung",
+      ],
+    },
+    {
+      id: 3,
+      text: "Ketika belajar untuk ujian, saya lebih suka...",
+      options: [
+        "A. Membuat catatan berwarna dan diagram",
+        "B. Membaca keras atau berdiskusi dengan teman",
+        "C. Membuat simulasi atau contoh kasus",
+      ],
+    },
+    {
+      id: 4,
+      text: "Saya lebih mudah mengingat sesuatu jika...",
+      options: [
+        "A. Saya melihatnya dalam bentuk visual",
+        "B. Saya mendengar atau mengucapkannya",
+        "C. Saya melakukannya sendiri",
+      ],
+    },
+    {
+      id: 5,
+      text: "Dalam diskusi kelompok, saya lebih suka...",
+      options: [
+        "A. Melihat presentasi atau slide",
+        "B. Mendengarkan penjelasan orang lain",
+        "C. Terlibat langsung dalam aktivitas",
+      ],
+    },
+  ];
+
+  const soal = questions.find((q) => q.id === current);
+
+  if (!soal) return null;
+
+  const handleSelectOption = (optionIndex: number) => {
+    setAnswers({ ...answers, [current]: optionIndex });
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center">
-      {/* Card */}
-      <div className="bg-gray-200 p-8 rounded-lg shadow-md w-full max-w-3xl border-2 border-blue-400">
-        {/* Judul */}
-        <h1 className="text-3xl font-bold text-center mb-6">QUIZ BLABLA</h1>
+    <div className="min-h-screen flex bg-white pt-8">
+      {/* ===== SIDEBAR ===== */}
+      <div className="w-64 bg-blue-900 text-white flex flex-col items-center py-10 relative">
+        {/* Toggle Button */}
+        <button className="absolute left-[-25px] bg-blue-900 text-white px-3 py-2 rounded-lg shadow">
+          {"<<"}
+        </button>
 
-        {/* Pertanyaan */}
-        <p className="text-center mb-6 text-lg">
-          Ketika menghadapi masalah sulit, kamu akan:
-        </p>
-
-        {/* Opsi Jawaban */}
-        <div className="space-y-4">
-          {[
-            { key: "A", text: "Menganalisis penyebab dan mencari solusi logis" },
-            { key: "B", text: "Mencari inspirasi dari hal-hal kreatif" },
-            { key: "C", text: "Menanyakan pendapat teman atau keluarga" },
-            { key: "D", text: "Mencoba langkah-langkah baru secara langsung" },
-          ].map((option) => (
-            <div
-              key={option.key}
-              onClick={() => handleSelect(option.key)}
-              className={`cursor-pointer border rounded px-4 py-2 ${
-                selectedAnswer === option.key
-                  ? "bg-blue-900 text-white border-blue-900"
-                  : "bg-white hover:bg-gray-100"
-              }`}
-            >
-              {option.key}. {option.text}
-            </div>
-          ))}
+        {/* Numbers */}
+        <div className="grid grid-cols-3 gap-3 mt-8">
+          {Array.from({ length: totalSoal }).map((_, i) => {
+            const questionNumber = i + 1;
+            const isAnswered = answers[questionNumber] !== undefined;
+            const isCurrent = current === questionNumber;
+            
+            return (
+              <button
+                key={i}
+                onClick={() => setCurrent(questionNumber)}
+                className={`w-12 h-12 flex items-center justify-center rounded font-semibold border transition-all ${
+                  isCurrent
+                    ? "scale-110 shadow-lg bg-white text-blue-900"
+                    : isAnswered
+                    ? "bg-green-500 text-white hover:bg-green-600"
+                    : "bg-white text-blue-900 hover:bg-gray-200"
+                }`}
+              >
+                {questionNumber}
+              </button>
+            );
+          })}
         </div>
 
-        {/* Tombol Navigasi */}
-        <div className="flex justify-between mt-8">
-          <button className="bg-blue-900 text-white w-12 h-12 rounded flex items-center justify-center text-xl hover:bg-blue-800">
-            <Link href ="/quiz1"> {"<"}</Link>
+        {/* Exit Button */}
+        <Link
+          href="/quizmenu"
+          className="absolute bottom-10 bg-red-600 text-white px-8 py-2 rounded-lg shadow hover:bg-red-700"
+        >
+          Keluar
+        </Link>
+      </div>
+
+      {/* ===== MAIN QUIZ AREA ===== */}
+      <div className="flex-1 px-6 md:px-20 py-10">
+        <h1 className="text-center text-3xl font-extrabold tracking-wider mb-10">
+          QUIZ JURUSAN KULIAH
+        </h1>
+
+        {/* Blue Box Soal */}
+        <div className="bg-sky-400 rounded-2xl p-8 shadow max-w-3xl mx-auto">
+          <p className="font-medium text-lg mb-6">
+            {soal.id}. {soal.text}
+          </p>
+
+          <div className="flex flex-col gap-4">
+            {soal.options.map((opt, idx) => {
+              const isSelected = answers[current] === idx;
+              
+              return (
+                <button
+                  key={idx}
+                  onClick={() => handleSelectOption(idx)}
+                  className={`text-left px-5 py-3 rounded-lg transition-all ${
+                    isSelected
+                      ? "bg-green-500 text-white hover:bg-green-600"
+                      : "bg-gray-200 hover:bg-gray-300"
+                  }`}
+                >
+                  {opt}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Navigation */}
+        <div className="flex justify-between max-w-3xl mx-auto mt-10">
+          <button
+            disabled={current === 1}
+            onClick={() => setCurrent((p) => p - 1)}
+            className="bg-blue-900 text-white px-6 py-3 rounded-lg disabled:bg-gray-400"
+          >
+            {"<"}
           </button>
-          <button className="bg-blue-900 text-white w-12 h-12 rounded flex items-center justify-center text-xl hover:bg-blue-800">
-            <Link href ="/quiz4"> {">"}</Link>
-          </button>
+
+          {current < totalSoal && (
+            <button
+              onClick={() => setCurrent((p) => p + 1)}
+              className="bg-blue-900 text-white px-6 py-3 rounded-lg"
+            >
+              {">"}
+            </button>
+          )}
         </div>
       </div>
     </div>

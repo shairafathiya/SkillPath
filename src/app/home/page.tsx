@@ -37,7 +37,7 @@ export default function HomeAfterLogin() {
           </h2>
 
           <Link
-            href="/quiz"
+            href="/quizmenu"
             className="inline-block mt-8 bg-blue-900 text-white px-8 py-3 rounded-lg text-lg shadow hover:bg-blue-800"
           >
             Mulai Test →
