@@ -109,7 +109,7 @@ export default function QuizPage() {
       {/* ===== MAIN QUIZ AREA ===== */}
       <div className="flex-1 px-6 md:px-20 py-10">
         <h1 className="text-center text-3xl font-extrabold tracking-wider mb-10">
-          QUIZ GAYA BELAJAR
+          QUIZ JURUSAN KULIAH
         </h1>
 
         {/* Blue Box Soal */}
