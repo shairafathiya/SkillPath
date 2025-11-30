@@ -14,10 +14,10 @@ export default function Navbar() {
             <Link href="/home" className="hover:text-blue-600">Home</Link>
           </li>
           <li>
-            <Link href="/quiz" className="hover:text-blue-600">Quiz</Link>
+            {/* <Link href="/quiz" className="hover:text-blue-600">Quiz</Link> */}
           </li>
           <li>
-            <Link href="/result" className="hover:text-blue-600">Result</Link>
+            {/* <Link href="/result" className="hover:text-blue-600">Result</Link> */}
           </li>
           <li>
             <Link href="/profile" className="hover:text-blue-600">Profile</Link>
