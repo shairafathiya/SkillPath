@@ -37,7 +37,7 @@ export default function HomeAfterLogin() {
           </h2>
 
           <Link
-            href="/quiz"
+            href="/quizmenu"
             className="inline-block mt-8 bg-blue-900 text-white px-8 py-3 rounded-lg text-lg shadow hover:bg-blue-800"
           >
             Mulai Test →
@@ -48,6 +48,7 @@ export default function HomeAfterLogin() {
       {/* === NEWS TITLE === */}
       <div className="max-w-5xl mx-auto px-6 mt-20">
         <div className="bg-indigo-400 rounded-xl py-4">
+           
           <h3 className="text-center text-3xl font-bold text-white italic">
             News!
           </h3>
