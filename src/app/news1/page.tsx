@@ -94,7 +94,7 @@ export default function NewsDetail() {
       {/* ===== BUTTON KEMBALI ===== */}
       <div className="max-w-4xl mx-auto px-6 mt-12 text-center">
         <Link
-          href="/news"
+          href="/home"
           className="bg-blue-900 text-white py-2 px-6 rounded-md text-sm hover:bg-blue-800"
         >
           Kembali
