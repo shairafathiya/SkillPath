@@ -25,7 +25,7 @@ export default function LoginPage() {
     type="submit"
     className="w-full bg-blue-900 text-white p-2 rounded hover:bg-blue-800 mt-4"
   >
-   <Link href="/quiz">MASUK</Link> 
+   <Link href="/home">MASUK</Link> 
   </button>
 </form>
  {/* Link ke halaman daftar */}
