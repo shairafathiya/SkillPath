@@ -116,14 +116,14 @@ export default function NewsDetail() {
 
                     Namun, dengan menerapkan tips di atas, Kamu dapat meningkatkan prestasi akademik dan mengatasi berbagai tantangan di perguruan tinggi.
 
-          {/* ... (list panjang tetap bisa kamu lanjutkan) */}
+        
         </div>
       </div>
 
       {/* ===== BUTTON KEMBALI ===== */}
       <div className="max-w-4xl mx-auto px-6 mt-12 text-center">
         <Link
-          href="/news"
+          href="/home"
           className="bg-blue-900 text-white py-2 px-6 rounded-md text-sm hover:bg-blue-800"
         >
           Kembali
