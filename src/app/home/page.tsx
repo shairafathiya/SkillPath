@@ -38,7 +38,7 @@ export default function HomeAfterLogin() {
           </h2>
 
           <Link
-            href="/quiz"
+            href="/quizmenu"
             className="inline-block mt-8 bg-blue-900 text-white px-8 py-3 rounded-lg text-lg shadow hover:bg-blue-800"
           >
             Mulai Test →
@@ -66,13 +66,12 @@ export default function HomeAfterLogin() {
               src="/img/uni2.jpg"
               className="rounded-xl w-full h-40 object-cover"
             />
-             <Link
-            href={"/news1"}>
-                 <p className="text-center text-white mt-4 font-medium">
+            <Link href={"/news1"}>
+            <p className="text-center text-white mt-4 font-medium">
               100 Universitas Terbaik di Indonesia 2025 versi Webometrics
             </p>
             </Link>
-           
+            
           </div>
 
           {/* Card 2 */}
@@ -81,9 +80,12 @@ export default function HomeAfterLogin() {
               src="/img/uni.webp"
               className="rounded-xl w-full h-40 object-cover"
             />
-            <p className="text-center text-white mt-4 font-medium">
+            <Link href={"/news2"}>
+             <p className="text-center text-white mt-4 font-medium">
               Kampus Terbaik di Indonesia Versi Unirank 2025
             </p>
+            </Link>
+           
           </div>
 
           {/* Card 3 */}
@@ -92,9 +94,12 @@ export default function HomeAfterLogin() {
               src="/img/rajin.jpg"
               className="rounded-xl w-full h-40 object-cover"
             />
+            <Link href={"/news3"}>
             <p className="text-center text-white mt-4 font-medium">
               10 Strategi Belajar Efektif untuk Meningkatkan Prestasi Akademik
             </p>
+            </Link>
+            
           </div>
 
         </div>
