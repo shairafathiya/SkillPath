@@ -19,9 +19,9 @@ export default function InformatikaDetail() {
           </p>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Karakteristik:</h2>
           <ul className="list-disc list-inside mt-3 text-gray-700 space-y-1">
-            <li><strong>Suka diagram, grafik, dan video</strong> – membangun aplikasi & sistem.</li>
-            <li><strong>Mudah mengingat bentuk & warna</strong> – menganalisis data untuk menghasilkan insight.</li>
-            <li><strong>Catatan rapi & penuh visual</strong> – menjaga keamanan sistem & data.</li>
+            <li>Suka diagram, grafik, dan video</li>
+            <li>Mudah mengingat bentuk & warna</li>
+            <li>Catatan rapi & penuh visual</li>
             
             
           </ul>
