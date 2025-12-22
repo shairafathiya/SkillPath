@@ -8,21 +8,21 @@ export default function InformatikaDetail() {
       <div className="max-w-4xl mx-auto bg-gray-100 p-8 rounded-2xl shadow-lg border border-gray-300">
         {/* Judul */}
         <h1 className="text-4xl font-extrabold text-blue-900 text-center mb-6">
-          Seni & Media
+          Sosial & Humaniora
         </h1>
 
         {/* Penjelasan Karier */}
         <section className="mb-8">
           
           <p className="text-gray-700 leading-relaxed">
-            Hasil kuis menunjukkan bahwa kamu memiliki jiwa kreatif dan imajinatif. Kamu lebih menikmati kegiatan yang melibatkan ekspresi visual, ide kreatif, dan komunikasi melalui media.
+            Berdasarkan hasil kuis, kamu memiliki kepekaan sosial dan kemampuan komunikasi yang baik. Kamu tertarik memahami manusia, perilaku sosial, serta berkontribusi langsung dalam kehidupan masyarakat.
           </p>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Karakteristik:</h2>
           <ul className="list-disc list-inside mt-3 text-gray-700 space-y-1">
-            <li>Kreatif dan inovatif</li>
-            <li>Peka terhadap visual dan estetika</li>
-            <li>Menyukai karya seni dan media</li>
-            <li>Suka mengekspresikan ide secara bebas</li>
+            <li>Empati tinggi</li>
+            <li>Komunikatif dan mudah beradaptasi</li>
+            <li>Suka berdiskusi dan bekerja dengan orang lain</li>
+            <li>Tertarik pada isu sosial dan pendidikan</li>
             
           </ul>
         </section>
@@ -32,10 +32,10 @@ export default function InformatikaDetail() {
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Rekomendasi Jurusan:</h2>
           <div className="bg-white p-4 rounded-xl border shadow-sm">
             <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>Desain Komunikasi Visual (DKV)</li>
-              <li>Ilmu Komunikasi</li>
-              <li>Sastra</li>
-              <li>Perfilman</li>
+              <li>Psikologi</li>
+              <li>Pendidikan</li>
+              <li>Sosiologi</li>
+              <li>Manajemen</li>
  
             </ul>
           </div>
@@ -46,10 +46,10 @@ export default function InformatikaDetail() {
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Contoh Karier:</h2>
           <div className="bg-white p-4 rounded-xl border shadow-sm">
             <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>Desain Grafis</li>
-              <li>Content Creator</li>
-              <li>Penulis</li>
-              <li>Creative Director</li>
+              <li>Psikolog</li>
+              <li>Guru / Dosen</li>
+              <li>PHRD</li>
+              <li>Konselor</li>
  
             </ul>
           </div>
@@ -60,24 +60,24 @@ export default function InformatikaDetail() {
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Rekomendasi Kampus Terbaik</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-white p-4 rounded-xl border shadow-sm">
-              <h3 className="font-semibold text-blue-900">Institut Kesenian Jakarta (IKJ)</h3>
-              <p className="text-gray-700 text-sm">Seni Rupa, Film</p>
-            </div>
-            <div className="bg-white p-4 rounded-xl border shadow-sm">
-              <h3 className="font-semibold text-blue-900">Universitas Multimedia Nusantara (UMN)</h3>
-              <p className="text-gray-700 text-sm">DKV, Film & Animasi</p>
-            </div>
-            <div className="bg-white p-4 rounded-xl border shadow-sm">
-              <h3 className="font-semibold text-blue-900">Telkom University</h3>
-              <p className="text-gray-700 text-sm">DKV, Broadcasting</p>
-            </div>
-            <div className="bg-white p-4 rounded-xl border shadow-sm">
               <h3 className="font-semibold text-blue-900">Universitas Indonesia (UI)</h3>
-              <p className="text-gray-700 text-sm">Ilmu Komunikasi</p>
+              <p className="text-gray-700 text-sm">Psikologi, Manajemen</p>
+            </div>
+            <div className="bg-white p-4 rounded-xl border shadow-sm">
+              <h3 className="font-semibold text-blue-900">Universitas Gadjah Mada (UGM)</h3>
+              <p className="text-gray-700 text-sm">Psikologi, Ilmu Sosial</p>
+            </div>
+            <div className="bg-white p-4 rounded-xl border shadow-sm">
+              <h3 className="font-semibold text-blue-900">Universitas Airlangga (UNAIR)</h3>
+              <p className="text-gray-700 text-sm">Psikologi</p>
             </div>
             <div className="bg-white p-4 rounded-xl border shadow-sm">
               <h3 className="font-semibold text-blue-900">Universitas Padjadjaran (UNPAD)</h3>
-              <p className="text-gray-700 text-sm">Sastra, Ilmu Komunikasi</p>
+              <p className="text-gray-700 text-sm">Sosiologi, Manajemen</p>
+            </div>
+            <div className="bg-white p-4 rounded-xl border shadow-sm">
+              <h3 className="font-semibold text-blue-900">Universitas Brawijaya (UB)</h3>
+              <p className="text-gray-700 text-sm">Psikologi</p>
             </div>
           </div>
         </section>
