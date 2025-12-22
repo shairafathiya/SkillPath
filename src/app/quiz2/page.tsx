@@ -10,47 +10,47 @@ export default function QuizPage() {
   const questions = [
     {
       id: 1,
-      text: "Saat mempelajari hal baru, saya lebih mudah memahami jika...",
+      text: "Saya lebih suka pelajaran...",
       options: [
-        "A. Ada gambar/diagramnya",
-        "B. Ada penjelasan suara atau saya mendengarkan orang lain",
-        "C. Saya langsung mencoba atau mempraktikkannya",
+        "A. Matematika, Biologi, Fisika",
+        "B. Ekonomi, Geografi, Sosiologi",
+        
       ],
     },
     {
       id: 2,
-      text: "Saya lebih cepat memahami informasi ketika...",
+      text: "Jika diberi tugas proyek, saya lebih suka membuat...",
       options: [
-        "A. Melihat tampilan visualnya",
-        "B. Mendengar penjelasan orang lain",
-        "C. Mempraktikkan secara langsung",
+        "A. Percobaan ilmiah atau penelitian",
+        "B. Laporan sosial, wawancara, atau analisis ekonomi",
+        
       ],
     },
     {
       id: 3,
-      text: "Ketika belajar untuk ujian, saya lebih suka...",
+      text: "Saya lebih tertarik membahas topik tentang...",
       options: [
-        "A. Membuat catatan berwarna dan diagram",
-        "B. Membaca keras atau berdiskusi dengan teman",
-        "C. Membuat simulasi atau contoh kasus",
+        "A. Alam, eksperimen, teknologi sains",
+        "B. Perilaku masyarakat, sejarah, ekonomi",
+       
       ],
     },
     {
       id: 4,
-      text: "Saya lebih mudah mengingat sesuatu jika...",
+      text: "Pekerjaan impian saya lebih dekat dengan...",
       options: [
-        "A. Saya melihatnya dalam bentuk visual",
-        "B. Saya mendengar atau mengucapkannya",
-        "C. Saya melakukannya sendiri",
+        "A. Dokter, peneliti, insinyur",
+        "B. Pengusaha, analis ekonomi, pekerja sosial",
+       
       ],
     },
     {
       id: 5,
-      text: "Dalam diskusi kelompok, saya lebih suka...",
+      text: "Cara berpikir saya lebih cenderung...",
       options: [
-        "A. Melihat presentasi atau slide",
-        "B. Mendengarkan penjelasan orang lain",
-        "C. Terlibat langsung dalam aktivitas",
+        "A. Analitis, logis, numerik",
+        "B. Observatif, sosial, berbasis kasus nyata masyarakat",
+        
       ],
     },
   ];
