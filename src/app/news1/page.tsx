@@ -2,20 +2,20 @@ import Link from "next/link";
 
 export default function NewsDetail() {
   return (
-    <div className="min-h-screen bg-white pb-10">
+    <div className="min-h-screen bg-white pb-10 pt-10">
 
       {/* ===== HEADER IMAGE ===== */}
       <div className="max-w-4xl mx-auto px-4 mt-8">
         <div className="rounded-2xl overflow-hidden">
           <div className="relative w-full h-64 md:h-72">
             <img
-              src="/img/news1.jpg"
+              src="/img/uni.webp"
               className="w-full h-full object-cover"
               alt="Berita Universitas"
             />
 
             {/* Text Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center px-4">
+            <div className="absolute inset-0 bg-black  flex items-center justify-center px-4">
               <h1 className="text-white text-2xl md:text-3xl font-bold text-center">
                 100 Universitas Terbaik di Indonesia 2025 versi Webometrics
               </h1>

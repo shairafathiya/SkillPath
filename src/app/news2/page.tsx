@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NewsDetail() {
   return (
-    <div className="min-h-screen bg-white pb-10">
+    <div className="min-h-screen bg-white pb-10 pt-8">
 
       {/* ===== HEADER IMAGE ===== */}
       <div className="max-w-4xl mx-auto px-4 mt-8">
