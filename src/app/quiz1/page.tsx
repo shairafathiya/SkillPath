@@ -1,11 +1,14 @@
 "use client";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
+
 import Link from "next/link";
 
 export default function QuizPage() {
   const [current, setCurrent] = useState(1);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const totalSoal = 5;
+  const router = useRouter();
 
   const questions = [
     {
@@ -54,6 +57,20 @@ export default function QuizPage() {
       ],
     },
   ];
+
+    const handleFinish = () => {
+    
+    if (Object.keys(answers).length < totalSoal) {
+      alert("Harap jawab semua soal sebelum menyelesaikan quiz");
+      return;
+    }
+
+    localStorage.setItem("quizAnswers", JSON.stringify(answers));
+
+
+    router.push("/quiz/result");
+  };
+
 
   const soal = questions.find((q) => q.id === current);
 
@@ -140,7 +157,7 @@ export default function QuizPage() {
         </div>
 
         {/* Navigation */}
-        <div className="flex justify-between max-w-3xl mx-auto mt-10">
+       <div className="flex justify-between max-w-3xl mx-auto mt-10">
           <button
             disabled={current === 1}
             onClick={() => setCurrent((p) => p - 1)}
@@ -149,7 +166,14 @@ export default function QuizPage() {
             {"<"}
           </button>
 
-          {current < totalSoal && (
+          {current === totalSoal ? (
+            <button
+              onClick={handleFinish}
+              className="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-green-500"
+            >
+              Finish
+            </button>
+          ) : (
             <button
               onClick={() => setCurrent((p) => p + 1)}
               className="bg-blue-900 text-white px-6 py-3 rounded-lg"
