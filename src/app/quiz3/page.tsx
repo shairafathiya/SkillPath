@@ -10,47 +10,52 @@ export default function QuizPage() {
   const questions = [
     {
       id: 1,
-      text: "Saat mempelajari hal baru, saya lebih mudah memahami jika...",
+      text: "Jenis aktivitas yang paling saya nikmati adalah...",
       options: [
-        "A. Ada gambar/diagramnya",
-        "B. Ada penjelasan suara atau saya mendengarkan orang lain",
-        "C. Saya langsung mencoba atau mempraktikkannya",
+        "A. Memecahkan masalah logika/teknologi",
+        "B. Membuat karya kreatif/visual",
+        "C. Berkegiatan sosial/komunikasi",
+        "D. Melakukan riset/eksperimen",
       ],
     },
     {
       id: 2,
-      text: "Saya lebih cepat memahami informasi ketika...",
+      text: "Saya ingin kuliah yang membuat saya menjadi...",
       options: [
-        "A. Melihat tampilan visualnya",
-        "B. Mendengar penjelasan orang lain",
-        "C. Mempraktikkan secara langsung",
+        "A. Programmer, data analyst, engineer",
+        "B. Desainer, penulis, kreator konten",
+        "C. Psikolog, guru, konselor, komunikator",
+        "D. Dokter, peneliti sains, farmasis",
       ],
     },
     {
       id: 3,
-      text: "Ketika belajar untuk ujian, saya lebih suka...",
+      text: "Tugas kuliah yang paling saya sukai adalah...",
       options: [
-        "A. Membuat catatan berwarna dan diagram",
-        "B. Membaca keras atau berdiskusi dengan teman",
-        "C. Membuat simulasi atau contoh kasus",
+        "A. Coding, hitungan, analisis data",
+        "B. Desain grafis, karya tulis, seni",
+        "C. Presentasi, interview, diskusi",
+        "D. Percobaan laboratorium"
       ],
     },
     {
       id: 4,
-      text: "Saya lebih mudah mengingat sesuatu jika...",
+      text: "Saya merasa paling kuat dalam kemampuan...",
       options: [
-        "A. Saya melihatnya dalam bentuk visual",
-        "B. Saya mendengar atau mengucapkannya",
-        "C. Saya melakukannya sendiri",
+        "A. Berpikir logis dan sistematis",
+        "B. Kreativitas & imajinasi",
+        "C. Kepekaan sosial & komunikasi",
+        "D. Observasi ilmiah & analisis eksperimen",
       ],
     },
     {
       id: 5,
-      text: "Dalam diskusi kelompok, saya lebih suka...",
+      text: "Bidang topik yang paling menarik bagi saya...",
       options: [
-        "A. Melihat presentasi atau slide",
-        "B. Mendengarkan penjelasan orang lain",
-        "C. Terlibat langsung dalam aktivitas",
+        "A. Teknologi, komputer, matematika",
+        "B. Seni, media, bahasa",
+        "C. Manajemen, psikologi, pendidikan",
+        "D. Biologi, kesehatan, lingkungan"
       ],
     },
   ];
