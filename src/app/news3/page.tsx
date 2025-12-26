@@ -17,7 +17,7 @@ export default function NewsDetail() {
             {/* Text Overlay */}
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center px-4">
               <h1 className="text-white text-2xl md:text-3xl font-bold text-center">
-                100 Universitas Terbaik di Indonesia 2025 versi Webometrics
+                10 Strategi Belajar Efektif Untuk Meningkatkan Prestasi Akademik
               </h1>
             </div>
           </div>
@@ -29,35 +29,17 @@ export default function NewsDetail() {
         <h2 className="text-2xl text-center font-semibold mb-6">Berita</h2>
 
         <p className="mb-4">
-          Selamat memasuki tahun ajaran baru! Bagi kamu yang naik ke kelas 12 pastinya mulai menyiapkan hal-hal terkait perkuliahan. Tapi, udah tau belum mau lanjut ke kampus mana? Nah, Webometrics punya daftar peringkat universitas terbaik di Indonesia yang bisa dijadikan acuan.
+        Sudah belajar lama tapi hasilnya belum maksimal? Bisa jadi bukan soal rajin atau tidak, melainkan cara belajar yang belum tepat. Faktanya, strategi belajar yang efektif memiliki peran besar dalam meningkatkan pemahaman dan prestasi akademik.
         </p>
 
         <p className="mb-4 font-medium">Let’s check this out!</p>
-        <p className="mb-4 font-semibold">Apa itu Webometrics?</p>
 
         <p className="mb-4">
-          Webometrics merupakan salah satu lembaga pemeringkatan universitas di seluruh dunia. Selain Webometrics, ada pula QS World dan 4ICU. Setiap lembaga mempunyai indikator penilaian masing-masing, sehingga hasilnya mungkin berbeda.
-        </p>
-
-        <p className="mb-3 font-semibold">Kriteria dan Tujuan Pemeringkatan Webometrics</p>
-        <p className="mb-4">
-          Gimana sih, cara kerja Webometrics? Penilaian Webometric terletak pada situs universitas. Terdapat 3 indikator penilaian, yaitu: impact, openness, dan excellence.
-        </p>
-
-        <p className="mb-4">
-          <strong>Impact</strong>, yakni seberapa banyak situs tersebut direferensikan oleh orang lain.  
-          <br />
-          <strong>Openness</strong>, apabila file yang terhubung dengan situs memiliki publikasi ilmiah cukup tinggi.  
-          <br />
-          <strong>Excellence</strong>, dilihat dari banyaknya jumlah artikel publikasi ilmiah.
-        </p>
-
-        <p className="mb-4">
-          Tujuan penilaian Webometrics adalah untuk meningkatkan partisipasi perguruan tinggi dalam menyediakan akses pengetahuan bagi masyarakat. Diharapkan mahasiswa atau dosen universitas tersebut dapat membagikan ilmu mereka dalam bentuk skripsi, jurnal, tesis, dan sejenisnya.
+        Dengan metode yang tepat, belajar tidak harus melelahkan. Justru bisa lebih terarah, efisien, dan menyenangkan. Berikut ini adalah 10 strategi belajar efektif yang banyak digunakan oleh siswa dan mahasiswa berprestasi.
         </p>
 
         <h3 className="font-semibold text-lg mt-6 mb-4">
-          Daftar Universitas Terbaik di Indonesia versi Webometrics 2025
+          10 Strategi Belajar Efektif Untuk Meningkatkan Prestasi Akademik
         </h3>
 
         {/* List Universitas */}

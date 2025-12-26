@@ -8,35 +8,49 @@ export default function InformatikaDetail() {
       <div className="max-w-4xl mx-auto bg-gray-100 p-8 rounded-2xl shadow-lg border border-gray-300">
         {/* Judul */}
         <h1 className="text-4xl font-extrabold text-blue-900 text-center mb-6">
-          Jurusan Informatika
+          Seni & Media
         </h1>
 
         {/* Penjelasan Karier */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">Karier di Informatika</h2>
+          
           <p className="text-gray-700 leading-relaxed">
-            Lulusan Informatika memiliki peluang karier yang sangat luas di era digital.
-            Beberapa bidang populer antara lain:
+            Hasil kuis menunjukkan bahwa kamu memiliki jiwa kreatif dan imajinatif. Kamu lebih menikmati kegiatan yang melibatkan ekspresi visual, ide kreatif, dan komunikasi melalui media.
           </p>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">Karakteristik:</h2>
           <ul className="list-disc list-inside mt-3 text-gray-700 space-y-1">
-            <li><strong>Software Engineer</strong> – membangun aplikasi & sistem.</li>
-            <li><strong>Data Scientist</strong> – menganalisis data untuk menghasilkan insight.</li>
-            <li><strong>Cybersecurity Specialist</strong> – menjaga keamanan sistem & data.</li>
-            <li><strong>AI/ML Engineer</strong> – mengembangkan kecerdasan buatan & machine learning.</li>
-            <li><strong>UI/UX Designer</strong> – mendesain pengalaman pengguna yang optimal.</li>
+            <li>Kreatif dan inovatif</li>
+            <li>Peka terhadap visual dan estetika</li>
+            <li>Menyukai karya seni dan media</li>
+            <li>Suka mengekspresikan ide secara bebas</li>
+            
           </ul>
         </section>
 
         {/* Rekomendasi Jurusan */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">Rekomendasi Jurusan Terkait</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">Rekomendasi Jurusan:</h2>
           <div className="bg-white p-4 rounded-xl border shadow-sm">
             <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>Ilmu Komputer</li>
-              <li>Sistem Informasi</li>
-              <li>Teknik Komputer</li>
-              <li>Data Science</li>
-              <li>Artificial Intelligence</li>
+              <li>Desain Komunikasi Visual (DKV)</li>
+              <li>Ilmu Komunikasi</li>
+              <li>Sastra</li>
+              <li>Perfilman</li>
+ 
+            </ul>
+          </div>
+        </section>
+
+        {/* Contoh Karier */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">Contoh Karier:</h2>
+          <div className="bg-white p-4 rounded-xl border shadow-sm">
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Desain Grafis</li>
+              <li>Content Creator</li>
+              <li>Penulis</li>
+              <li>Creative Director</li>
+ 
             </ul>
           </div>
         </section>
@@ -46,24 +60,24 @@ export default function InformatikaDetail() {
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Rekomendasi Kampus Terbaik</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-white p-4 rounded-xl border shadow-sm">
+              <h3 className="font-semibold text-blue-900">Institut Kesenian Jakarta (IKJ)</h3>
+              <p className="text-gray-700 text-sm">Seni Rupa, Film</p>
+            </div>
+            <div className="bg-white p-4 rounded-xl border shadow-sm">
+              <h3 className="font-semibold text-blue-900">Universitas Multimedia Nusantara (UMN)</h3>
+              <p className="text-gray-700 text-sm">DKV, Film & Animasi</p>
+            </div>
+            <div className="bg-white p-4 rounded-xl border shadow-sm">
+              <h3 className="font-semibold text-blue-900">Telkom University</h3>
+              <p className="text-gray-700 text-sm">DKV, Broadcasting</p>
+            </div>
+            <div className="bg-white p-4 rounded-xl border shadow-sm">
               <h3 className="font-semibold text-blue-900">Universitas Indonesia (UI)</h3>
-              <p className="text-gray-700 text-sm">Ilmu Komputer, Sistem Informasi</p>
+              <p className="text-gray-700 text-sm">Ilmu Komunikasi</p>
             </div>
             <div className="bg-white p-4 rounded-xl border shadow-sm">
-              <h3 className="font-semibold text-blue-900">Institut Teknologi Bandung (ITB)</h3>
-              <p className="text-gray-700 text-sm">Informatika, Data Science</p>
-            </div>
-            <div className="bg-white p-4 rounded-xl border shadow-sm">
-              <h3 className="font-semibold text-blue-900">Universitas Gadjah Mada (UGM)</h3>
-              <p className="text-gray-700 text-sm">Ilmu Komputer, Elektronika & Instrumentasi</p>
-            </div>
-            <div className="bg-white p-4 rounded-xl border shadow-sm">
-              <h3 className="font-semibold text-blue-900">Institut Teknologi Sepuluh Nopember (ITS)</h3>
-              <p className="text-gray-700 text-sm">Informatika, Sistem Informasi</p>
-            </div>
-            <div className="bg-white p-4 rounded-xl border shadow-sm">
-              <h3 className="font-semibold text-blue-900">BINUS University</h3>
-              <p className="text-gray-700 text-sm">Computer Science, Cyber Security</p>
+              <h3 className="font-semibold text-blue-900">Universitas Padjadjaran (UNPAD)</h3>
+              <p className="text-gray-700 text-sm">Sastra, Ilmu Komunikasi</p>
             </div>
           </div>
         </section>
