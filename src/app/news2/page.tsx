@@ -13,6 +13,8 @@ export default function NewsDetail() {
               src="/img/news1.jpg"
               className="w-full h-full object-cover"
               alt="Berita Universitas"
+              width={64}
+              height={72}
             />
 
             {/* Text Overlay */}

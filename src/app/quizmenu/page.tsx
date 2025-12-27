@@ -32,6 +32,8 @@ export default function QuizListPage() {
             <div className="w-1/3">
               <Image
                 src={q.img}
+                width={500}
+                height={200}
                 alt="quiz illustration"
                 className="rounded-lg"
               />

@@ -60,6 +60,8 @@ export default function HomeAfterLogin() {
                 src={profile.photo}
                 alt="profilpic"
                 className="w-28 h-28 rounded-full object-cover"
+                width={28}
+                height={28}
               />
             </div>
 
@@ -170,6 +172,8 @@ export default function HomeAfterLogin() {
           <div className="bg-indigo-500 rounded-2xl p-4 shadow">
             <Image
               src="/img/uni2.jpg"
+              width={200}
+              height={200}
               className="rounded-xl w-full h-40 object-cover" 
               alt={"gambar 1 univ "}   
              />
@@ -185,7 +189,9 @@ export default function HomeAfterLogin() {
           {/* Card 2 */}
           <div className="bg-indigo-500 rounded-2xl p-4 shadow">
             <Image
-              src="/img/uni.webp"
+              src="/img/uni2.jpg"
+              width={200}
+              height={200}
               className="rounded-xl w-full h-40 object-cover" 
               alt={"Gambar 2"}            />
             

@@ -10,8 +10,10 @@ export default function NewsDetail() {
         <div className="rounded-2xl overflow-hidden">
           <div className="relative w-full h-64 md:h-72">
             <Image
-              src="/img/uni.webp"
+              src="/img/uni2.jpg"
               className="w-full h-full object-cover"
+              width={64}
+              height={72}
               alt="Berita Universitas"
             />
 
