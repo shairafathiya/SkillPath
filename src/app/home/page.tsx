@@ -1,14 +1,22 @@
 "use client";
-import { profile } from "console";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+type Profile = {
+    username: string;
+    nama: string;
+    usia: string;
+    gender: string;
+    pendidikan: string;
+    totalQuiz: string;
+    photo: string;
+ };
 
 export default function HomeAfterLogin() {
   const [isEdit, setIsEdit] = useState(false);
 
-  const [profile, setProfile] = useState({
+  const [profile, setProfile] = useState<Profile>({
     username: "Username",
     nama: "",
     usia: "",
@@ -17,6 +25,15 @@ export default function HomeAfterLogin() {
     totalQuiz: "0",
     photo: "/default-avatar.png",
   });
+
+  const fields: Array<[keyof Profile, string]> = [
+  ["nama", "Nama"],
+  ["usia", "Usia"],
+  ["gender", "Jenis Kelamin"],
+  ["pendidikan", "Tingkat Pendidikan"],
+  ["totalQuiz", "Total Quiz"],
+];
+
 
   // Load data dari localStorage
   useEffect(() => {
@@ -93,24 +110,18 @@ export default function HomeAfterLogin() {
 
           {/* INFO PROFIL */}
           <div className="text-white text-lg leading-relaxed md:ml-10 space-y-2">
-            {[
-              ["nama", "Nama"],
-              ["usia", "Usia"],
-              ["gender", "Jenis Kelamin"],
-              ["pendidikan", "Tingkat Pendidikan"],
-              ["totalQuiz", "Total Quiz"],
-            ].map(([key, label]) => (
+           {fields.map(([key, label]) => (
               <p key={key}>
                 {label} :{" "}
                 {isEdit ? (
                   <input
                     name={key}
-                    value={(profile as any)[key]}
+                    value={profile[key]}
                     onChange={handleChange}
                     className="ml-2 px-2 py-1 rounded text-black"
                   />
                 ) : (
-                  <span>{(profile as any)[key] || "—"}</span>
+                  <span>{profile[key] || "—"}</span>
                 )}
               </p>
             ))}
