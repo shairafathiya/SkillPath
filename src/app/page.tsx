@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -41,7 +42,7 @@ export default function Home() {
 
         {/* Right Illustration */}
         <div className="mt-12 md:mt-0 md:w-1/2 flex justify-center">
-          <img
+          <Image
             src="/img/Learning.png"
             alt="Ilustrasi orang naik tangga buku"
             className="w-[350px] md:w-[420px] h-auto"
@@ -67,7 +68,7 @@ export default function Home() {
               dan memilih jalur pendidikan yang tepat untuk masa depan.
             </p>
           </div>
-          <img
+          <Image
             src="/img/about1.png"
             className="rounded-xl w-full md:w-1/2 h-64 object-cover"
             alt="Students studying"
@@ -82,7 +83,7 @@ export default function Home() {
               yang paling sesuai demi masa depan yang lebih terarah.
             </p>
           </div>
-          <img
+          <Image
             src="/img/rajin.jpg"
             className="rounded-xl w-full md:w-1/2 h-64 object-cover"
             alt="Students discussing"

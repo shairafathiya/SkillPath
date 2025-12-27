@@ -259,7 +259,7 @@ export default function HomeAfterLogin() {
               
               {/* Foto Profil */}
               <div className="flex flex-col items-center w-1/3">
-                <img
+                <Image
                   src={profilePic}
                   alt="Profile"
                   className="w-28 h-28 rounded-full object-cover border-4 border-white shadow"
