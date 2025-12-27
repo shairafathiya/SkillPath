@@ -86,7 +86,7 @@ export default function QuizPage() {
       let result = "";
 
       if (countA >= countB && countA >= countC && countA >= countD) {
-        result = "tenik-informatika";      // dominan A
+        result = "teknik-informatika";      // dominan A
       } else if (countB >= countA && countB >= countC) {
         result = "seni-media"; }   // dominan B
         else if (countC >= countA && countC >= countD) {
