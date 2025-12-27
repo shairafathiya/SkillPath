@@ -59,17 +59,41 @@ export default function QuizPage() {
   ];
 
     const handleFinish = () => {
-    
-    if (Object.keys(answers).length < totalSoal) {
-      alert("Harap jawab semua soal sebelum menyelesaikan quiz");
-      return;
-    }
+      if (Object.keys(answers).length < totalSoal) {
+        alert("Harap jawab semua soal sebelum menyelesaikan quiz");
+        return;
+      }
 
-    localStorage.setItem("quizAnswers", JSON.stringify(answers));
+      // Hitung jumlah jawaban A, B, C
+      let countA = 0;
+      let countB = 0;
+      let countC = 0;
 
+      Object.values(answers).forEach((value) => {
+        if (value === 0) countA++;
+        if (value === 1) countB++;
+        if (value === 2) countC++;
+      });
 
-    router.push("/quiz/result");
-  };
+      // Tentukan hasil dominan
+      let result = "";
+
+      if (countA >= countB && countA >= countC) {
+        result = "visual";      // dominan A
+      } else if (countB >= countA && countB >= countC) {
+        result = "auditory";    // dominan B
+      } else {
+        result = "kinesthetic"; // dominan C
+      }
+
+      // Simpan ke localStorage (opsional)
+      localStorage.setItem("quizAnswers", JSON.stringify(answers));
+      localStorage.setItem("quizResult", result);
+
+      // Redirect ke halaman hasil
+      router.push(`/result/${result}`);
+    };
+
 
 
   const soal = questions.find((q) => q.id === current);

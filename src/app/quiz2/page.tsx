@@ -58,18 +58,40 @@ export default function QuizPage() {
   ];
 
     const handleFinish = () => {
-      // optional: validasi semua soal terjawab
       if (Object.keys(answers).length < totalSoal) {
         alert("Harap jawab semua soal sebelum menyelesaikan quiz");
         return;
       }
 
-      // Simpan jawaban (sementara) → localStorage
-      localStorage.setItem("quizAnswers", JSON.stringify(answers));
+      // Hitung jumlah jawaban A, B, C
+      let countA = 0;
+      let countB = 0;
+    
 
-      // Arahkan ke halaman result
-      router.push("/quiz/result");
+      Object.values(answers).forEach((value) => {
+        if (value === 0) countA++;
+        if (value === 1) countB++;
+      
+      });
+
+      // Tentukan hasil dominan
+      let result = "";
+
+      if (countA > countB ) {
+        result = "ipa";      // dominan A
+  
+      } else {
+        result = "ips"; // dominan C
+      }
+
+      // Simpan ke localStorage (opsional)
+      localStorage.setItem("quizAnswers", JSON.stringify(answers));
+      localStorage.setItem("quizResult", result);
+
+      // Redirect ke halaman hasil
+      router.push(`/result/${result}`);
     };
+
   const soal = questions.find((q) => q.id === current);
 
   if (!soal) return null;

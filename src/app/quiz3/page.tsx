@@ -62,19 +62,47 @@ export default function QuizPage() {
       ],
     },
   ];
+
     const handleFinish = () => {
-      // optional: validasi semua soal terjawab
       if (Object.keys(answers).length < totalSoal) {
         alert("Harap jawab semua soal sebelum menyelesaikan quiz");
         return;
       }
 
-      // Simpan jawaban (sementara) → localStorage
-      localStorage.setItem("quizAnswers", JSON.stringify(answers));
+      // Hitung jumlah jawaban A, B, C
+      let countA = 0;
+      let countB = 0;
+      let countC = 0;
+      let countD = 0;
 
-      // Arahkan ke halaman result
-      router.push("/quiz/result");
+      Object.values(answers).forEach((value) => {
+        if (value === 0) countA++;
+        if (value === 1) countB++;
+        if (value === 2) countC++;
+        if (value === 3) countC++;
+      });
+
+      // Tentukan hasil dominan
+      let result = "";
+
+      if (countA >= countB && countA >= countC && countA >= countD) {
+        result = "tenik-informatika";      // dominan A
+      } else if (countB >= countA && countB >= countC) {
+        result = "seni-media"; }   // dominan B
+        else if (countC >= countA && countC >= countD) {
+        result = "sosial-humaniora"; //dominan c
+      } else {
+        result = "sains-kesehatan"; // dominan D
+      }
+
+      // Simpan ke localStorage (opsional)
+      localStorage.setItem("quizAnswers", JSON.stringify(answers));
+      localStorage.setItem("quizResult", result);
+
+      // Redirect ke halaman hasil
+      router.push(`/result/${result}`);
     };
+
   const soal = questions.find((q) => q.id === current);
 
   if (!soal) return null;

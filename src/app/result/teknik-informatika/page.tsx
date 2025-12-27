@@ -4,7 +4,7 @@ import React from "react";
 
 export default function InformatikaDetail() {
   return (
-    <div className="min-h-screen bg-white px-6 py-12">
+    <div className="min-h-screen bg-white px-6 py-12 pt-20">
       <div className="max-w-4xl mx-auto bg-gray-100 p-8 rounded-2xl shadow-lg border border-gray-300">
         {/* Judul */}
         <h1 className="text-4xl font-extrabold text-blue-900 text-center mb-6">
@@ -85,10 +85,10 @@ export default function InformatikaDetail() {
         {/* Tombol Navigasi */}
         <div className="flex justify-center gap-4 mt-8">
           <button className="bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition">
-           <Link href= "/quiz">Kembali ke Home</Link> 
+           <Link href= "/home">Kembali ke Home</Link> 
           </button>
           <button className="bg-gray-300 text-blue-900 px-6 py-2 rounded-lg hover:bg-gray-400 transition">
-            <Link href="/quiz1">Coba Quiz Lagi</Link>
+            <Link href="/quizmenu">Coba Quiz Lagi</Link>
           </button>
         </div>
       </div>
