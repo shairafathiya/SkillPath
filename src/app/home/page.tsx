@@ -109,7 +109,7 @@ export default function HomeAfterLogin() {
           </div>
 
           {/* INFO PROFIL */}
-          <div className="text-white text-lg leading-relaxed md:ml-10 space-y-2">
+          <div className="text-white text-lg leading-relaxed md:ml-10 md:mr-50 space-y-2">
            {fields.map(([key, label]) => (
               <p key={key}>
                 {label} :{" "}
@@ -129,7 +129,7 @@ export default function HomeAfterLogin() {
         
 
         {/* BUTTON */}
-        <div className="flex justify-end mt-6">
+        <div className="flex justify-self-auto object-bottom md:mt-30 ml-15">
           {isEdit ? (
             <button
               onClick={handleSave}
