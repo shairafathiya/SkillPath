@@ -42,10 +42,11 @@ export default function Home() {
 
         {/* Right Illustration */}
         <div className="mt-12 md:mt-0 md:w-1/2 flex justify-center">
-          <Image
+          <img
             src="/img/Learning.png"
             alt="Ilustrasi orang naik tangga buku"
             className="w-[350px] md:w-[420px] h-auto"
+            
           />
         </div>
       </section>
