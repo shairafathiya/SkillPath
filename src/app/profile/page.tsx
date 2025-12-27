@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function ProfileCard() {
   const [isEdit, setIsEdit] = useState(false);
@@ -51,7 +52,7 @@ export default function ProfileCard() {
           {/* FOTO PROFIL */}
           <div className="flex flex-col items-center">
             <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow">
-              <img
+              <Image
                 src={profile.photo}
                 alt="profilpic"
                 className="w-28 h-28 rounded-full object-cover"

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function NewsDetail() {
   return (
@@ -8,7 +9,7 @@ export default function NewsDetail() {
       <div className="max-w-4xl mx-auto px-4 mt-8">
         <div className="rounded-2xl overflow-hidden">
           <div className="relative w-full h-64 md:h-72">
-            <img
+            <Image
               src="/img/news1.jpg"
               className="w-full h-full object-cover"
               alt="Berita Universitas"

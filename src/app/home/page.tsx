@@ -56,7 +56,7 @@ export default function HomeAfterLogin() {
           {/* FOTO PROFIL */}
           <div className="flex flex-col items-center">
             <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow">
-              <img
+              <Image
                 src={profile.photo}
                 alt="profilpic"
                 className="w-28 h-28 rounded-full object-cover"
@@ -168,11 +168,12 @@ export default function HomeAfterLogin() {
 
           {/* Card 1 */}
           <div className="bg-indigo-500 rounded-2xl p-4 shadow">
-            <img
+            <Image
               src="/img/uni2.jpg"
-              className="rounded-xl w-full h-40 object-cover"
-            />
-             <Link
+              className="rounded-xl w-full h-40 object-cover" 
+              alt={"gambar 1 univ "}   
+             />
+            <Link
             href={"/news1"}>
                  <p className="text-center text-white mt-4 font-medium">
               100 Universitas Terbaik di Indonesia 2025 versi Webometrics
@@ -183,10 +184,10 @@ export default function HomeAfterLogin() {
 
           {/* Card 2 */}
           <div className="bg-indigo-500 rounded-2xl p-4 shadow">
-            <img
+            <Image
               src="/img/uni.webp"
-              className="rounded-xl w-full h-40 object-cover"
-            />
+              className="rounded-xl w-full h-40 object-cover" 
+              alt={"Gambar 2"}            />
             
             <Link
             href={"/news2"}>
@@ -199,9 +200,12 @@ export default function HomeAfterLogin() {
 
           {/* Card 3 */}
           <div className="bg-indigo-500 rounded-2xl p-4 shadow">
-            <img
+            <Image
               src="/img/rajin.jpg"
-              className="rounded-xl w-full h-40 object-cover"
+              width={200}
+              height={200}
+              className="rounded-xl w-full h-40 object-cover" 
+              alt={"Gamabar Mahasiswa Belajar"}
             />
             <Link
             href={"/news3"}>
@@ -281,7 +285,7 @@ export default function HomeAfterLogin() {
                       placeholder="Nama"
                       value={profile.nama}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 rounded border"
+                      className="w-full px-4 py-2 rounded borde bg-emerald-50"
                     />
                     <input
                       type="number"
@@ -339,7 +343,7 @@ export default function HomeAfterLogin() {
               {!isEditing && (
                 <button
                   onClick={() => setIsEditing(true)}
-                  className="absolute bottom-4 right-4 bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 flex items-center gap-2"
+                  className=" bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 flex items-center gap-2"
                 >
                   Edit Profile  
                 </button>

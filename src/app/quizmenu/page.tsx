@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function QuizListPage() {
   const quizzes = [
@@ -29,7 +30,7 @@ export default function QuizListPage() {
           <div key={i} className="flex gap-6 bg-gray-100 p-6 rounded-lg shadow">
             {/* Left Image */}
             <div className="w-1/3">
-              <img
+              <Image
                 src={q.img}
                 alt="quiz illustration"
                 className="rounded-lg"

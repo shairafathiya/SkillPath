@@ -10,7 +10,7 @@ export default function Navbar() {
 
         {/* Menu */}
         <ul className="flex space-x-8 text-lg">
-          <li>
+          {/* <li>
             <Link href="/home" className="hover:text-blue-600">Home</Link>
           </li>
           <li>
@@ -21,7 +21,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link href="/profile" className="hover:text-blue-600">Profile</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

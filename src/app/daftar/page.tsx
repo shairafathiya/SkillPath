@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 export default function Register() {
   return (
@@ -14,7 +15,7 @@ export default function Register() {
       {/* Main Content */}
       <main className="flex flex-1 items-center justify-center relative">
         {/* Left Illustration */}
-        <img
+        <Image
           src="../img/Learning1.png"
           alt="Orang berjalan"
           className="absolute bottom-0 left-10 w-40 h-auto"
@@ -60,7 +61,7 @@ export default function Register() {
         </div>
 
         {/* Right Illustration */}
-        <img
+        <Image
           src="../img/learning2.png"
           alt="Tumpukan buku"
           className="absolute bottom-0 right-10 w-56 h-auto"
