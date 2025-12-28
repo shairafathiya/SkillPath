@@ -23,7 +23,7 @@ export default function HomeAfterLogin() {
     gender: "",
     pendidikan: "",
     totalQuiz: "0",
-    photo: "/default-avatar.png",
+    photo: "/img/default-avatar.jpg",
   });
 
   const fields: Array<[keyof Profile, string]> = [

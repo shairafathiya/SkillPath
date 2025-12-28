@@ -63,53 +63,64 @@ export default function QuizPage() {
     },
   ];
 
-    const handleFinish = () => {
-      if (Object.keys(answers).length < totalSoal) {
-        alert("Harap jawab semua soal sebelum menyelesaikan quiz");
-        return;
-      }
+  const handleFinish = () => {
+    if (Object.keys(answers).length < totalSoal) {
+      alert("Harap jawab semua soal sebelum menyelesaikan quiz");
+      return;
+    }
 
-      // Hitung jumlah jawaban A, B, C
-      let countA = 0;
-      let countB = 0;
-      let countC = 0;
-      let countD = 0;
-
-      Object.values(answers).forEach((value) => {
-        if (value === 0) countA++;
-        if (value === 1) countB++;
-        if (value === 2) countC++;
-        if (value === 3) countD++;
-      });
-
-      // Tentukan hasil dominan
-      let result = "";
-
-      if (countA >= countB && countA >= countC && countA >= countD) {
-        result = "teknik-informatika";      // dominan A
-      } else if (countB >= countA && countB >= countC) {
-        result = "seni-media"; }   // dominan B
-        else if (countC >= countA && countC >= countD) {
-        result = "sosial-humaniora"; //dominan c
-      } else {
-        result = "sains-kesehatan"; // dominan D
-      }
-
-      // Simpan ke localStorage (opsional)
-      localStorage.setItem("quizAnswers", JSON.stringify(answers));
-      localStorage.setItem("quizResult", result);
-
-      // Redirect ke halaman hasil
-      router.push(`/result/${result}`);
+    // Hitung jumlah jawaban
+    const counts = {
+      A: 0,
+      B: 0,
+      C: 0,
+      D: 0,
     };
 
-  const soal = questions.find((q) => q.id === current);
+    Object.values(answers).forEach((value) => {
+      if (value === 0) counts.A++;
+      if (value === 1) counts.B++;
+      if (value === 2) counts.C++;
+      if (value === 3) counts.D++;
+    });
 
-  if (!soal) return null;
+    // Tentukan nilai tertinggi
+    const maxValue = Math.max(
+      counts.A,
+      counts.B,
+      counts.C,
+      counts.D
+    );
 
-  const handleSelectOption = (optionIndex: number) => {
-    setAnswers({ ...answers, [current]: optionIndex });
+    // Tentukan hasil (prioritas jelas & konsisten)
+    let result = "";
+
+    if (counts.A === maxValue) {
+      result = "teknik-informatika";
+    } else if (counts.B === maxValue) {
+      result = "seni-media";
+    } else if (counts.C === maxValue) {
+      result = "sosial-humaniora";
+    } else {
+      result = "sains-kesehatan";
+    }
+
+    // Simpan hasil
+    localStorage.setItem("quizAnswers", JSON.stringify(answers));
+    localStorage.setItem("quizResult", result);
+
+    // Redirect
+    router.push(`/result/${result}`);
   };
+
+
+    const soal = questions.find((q) => q.id === current);
+
+    if (!soal) return null;
+
+    const handleSelectOption = (optionIndex: number) => {
+      setAnswers({ ...answers, [current]: optionIndex });
+    };
 
   return (
     <div className="min-h-screen flex bg-white pt-8">
