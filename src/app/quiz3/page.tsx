@@ -79,7 +79,7 @@ export default function QuizPage() {
         if (value === 0) countA++;
         if (value === 1) countB++;
         if (value === 2) countC++;
-        if (value === 3) countC++;
+        if (value === 3) countD++;
       });
 
       // Tentukan hasil dominan
